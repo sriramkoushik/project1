@@ -1,0 +1,8 @@
+<?php
+$conn = new mysqli("localhost","root","","fund");
+$sql = "SELECT lastname FROM register";
+$result = $conn->query($sql);
+echo "welcome";
+echo $result;
+$conn->close();
+?>
